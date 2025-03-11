@@ -15,8 +15,6 @@ The system consists of a **modified 1.9 L polypropylene container** reinforced w
 
 The enclosure houses **electrolyte reservoirs (20 mL each), a pump assembly, and circulation tubing**. A nitrogen outlet **bubbler** prevents backflow, minimizing oxygen contamination over extended cycling periods.
 
-## Control System & Software
-
 ### Microcontroller & Flow Control
 
 An **Arduino Beetle (Leonardo-based)** microcontroller regulates electrolyte circulation and monitors environmental conditions inside the sealed enclosure. The **three KNF FF12 diaphragm pumps** are controlled via **PWM signals**, allowing precise control over flow rates.
@@ -105,9 +103,10 @@ This script **monitors environmental conditions** inside the sealed enclosure, l
 3.	Upload Pump_control.ino and Sensor_console.ino to the Arduino Beetle.
 
 ### **3. Running the System**
-	- Monitor the Serial Output (9600 baud): '''Pump 1 RPM, Pump 1 Avg, Pump 2 RPM, Pump 2 Avg, NMR Pump RPM, NMR Pump Avg'''
-    - Adjust pump speeds via serial input: '''Pump 1 RPM, Pump 2 RPM, NMR Pump RPM'''
-    - Check sensor values on the LCD display: '''Humidity (%), Oxygen (ppt)'''
+Monitor the Serial Output (9600 baud): '''Pump 1 RPM, Pump 1 Avg, Pump 2 RPM, Pump 2 Avg, NMR Pump RPM, NMR Pump Avg'''
+Adjust pump speeds via serial input: '''Pump 1 RPM, Pump 2 RPM, NMR Pump RPM'''
+Check sensor values on the LCD display: '''Humidity (%), Oxygen (ppt)'''
+
 ## Lisence
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 ## Acknowledgments
